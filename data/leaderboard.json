@@ -1,0 +1,3006 @@
+{
+  "generated_at": "2026-05-17T02:05:33.975885+00:00",
+  "pipeline_version": "1.0.0",
+  "n_models": 81,
+  "n_benchmarks": 5,
+  "n_benchmarks_expected": 5,
+  "leaderboard": [
+    {
+      "model": "grok-4",
+      "composite_efficiency_score": 63.0552,
+      "avg_normalized_e": 66.3739,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 30.166,
+          "completion_time_s": 896.93,
+          "e_bt": 0.000101,
+          "normalized_e": 58.669,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 84.265,
+          "completion_time_s": 76.09,
+          "e_bt": 0.009332,
+          "normalized_e": 18.0418,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 72.2,
+          "completion_time_s": 134.76,
+          "e_bt": 0.003868,
+          "normalized_e": 88.7849,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 40.449,
+          "completion_time_s": 161.41,
+          "e_bt": 0.001014,
+          "normalized_e": 100.0,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "model": "gemini-3.1-pro-preview-0226",
+      "composite_efficiency_score": 54.2303,
+      "avg_normalized_e": 54.2303,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 38.834,
+          "completion_time_s": 900.44,
+          "e_bt": 0.000167,
+          "normalized_e": 96.8503,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 88.485,
+          "completion_time_s": 88.89,
+          "e_bt": 0.008808,
+          "normalized_e": 17.0047,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 78.8,
+          "completion_time_s": 312.26,
+          "e_bt": 0.001989,
+          "normalized_e": 43.014,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 67.416,
+          "completion_time_s": 542.89,
+          "e_bt": 0.000837,
+          "normalized_e": 81.4891,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 32.034,
+          "completion_time_s": 1211.91,
+          "e_bt": 8.5e-05,
+          "normalized_e": 32.7932,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "model": "grok-3",
+      "composite_efficiency_score": 50.0,
+      "avg_normalized_e": 100.0,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 52.901,
+          "completion_time_s": 5.52,
+          "e_bt": 0.050725,
+          "normalized_e": 100.0,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "model": "claude-opus-4.7",
+      "composite_efficiency_score": 47.2629,
+      "avg_normalized_e": 47.2629,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 47.084,
+          "completion_time_s": 3081.91,
+          "e_bt": 7.2e-05,
+          "normalized_e": 41.5967,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 85.073,
+          "completion_time_s": 461.91,
+          "e_bt": 0.001567,
+          "normalized_e": 2.6672,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 82.0,
+          "completion_time_s": 441.99,
+          "e_bt": 0.001521,
+          "normalized_e": 31.637,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 68.539,
+          "completion_time_s": 660.89,
+          "e_bt": 0.000711,
+          "normalized_e": 68.2334,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 71.003,
+          "completion_time_s": 2141.9,
+          "e_bt": 0.000235,
+          "normalized_e": 92.1801,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "model": "gpt-5.4",
+      "composite_efficiency_score": 42.3805,
+      "avg_normalized_e": 42.3805,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 67.834,
+          "completion_time_s": 2660.89,
+          "e_bt": 0.000173,
+          "normalized_e": 100.0,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 84.141,
+          "completion_time_s": 209.42,
+          "e_bt": 0.003381,
+          "normalized_e": 6.2584,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 78.2,
+          "completion_time_s": 307.12,
+          "e_bt": 0.001991,
+          "normalized_e": 43.078,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 58.427,
+          "completion_time_s": 1027.52,
+          "e_bt": 0.000332,
+          "normalized_e": 28.5255,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 67.421,
+          "completion_time_s": 5174.85,
+          "e_bt": 8.8e-05,
+          "normalized_e": 34.0406,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "model": "gpt-5.3-codex",
+      "composite_efficiency_score": 41.5713,
+      "avg_normalized_e": 41.5713,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 43.834,
+          "completion_time_s": 3574.26,
+          "e_bt": 5.4e-05,
+          "normalized_e": 31.0862,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 87.313,
+          "completion_time_s": 132.63,
+          "e_bt": 0.005748,
+          "normalized_e": 10.9457,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 78.0,
+          "completion_time_s": 246.53,
+          "e_bt": 0.002468,
+          "normalized_e": 54.6859,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 64.045,
+          "completion_time_s": 506.28,
+          "e_bt": 0.00081,
+          "normalized_e": 78.6566,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 61.767,
+          "completion_time_s": 4548.11,
+          "e_bt": 8.4e-05,
+          "normalized_e": 32.4818,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "model": "gpt-5.5",
+      "composite_efficiency_score": 37.9729,
+      "avg_normalized_e": 39.9714,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 85.296,
+          "completion_time_s": 166.84,
+          "e_bt": 0.004361,
+          "normalized_e": 8.1988,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 82.6,
+          "completion_time_s": 426.43,
+          "e_bt": 0.0016,
+          "normalized_e": 33.5529,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 73.202,
+          "completion_time_s": 2298.22,
+          "e_bt": 0.000233,
+          "normalized_e": 18.1341,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 69.847,
+          "completion_time_s": 1911.57,
+          "e_bt": 0.000255,
+          "normalized_e": 100.0,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "model": "claude-opus-4.6-thinking",
+      "composite_efficiency_score": 36.8867,
+      "avg_normalized_e": 38.8281,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 84.676,
+          "completion_time_s": 324.49,
+          "e_bt": 0.00221,
+          "normalized_e": 3.94,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 78.2,
+          "completion_time_s": 350.76,
+          "e_bt": 0.001743,
+          "normalized_e": 37.0455,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 58.427,
+          "completion_time_s": 898.49,
+          "e_bt": 0.00038,
+          "normalized_e": 33.5295,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 53.498,
+          "completion_time_s": 1386.06,
+          "e_bt": 0.000206,
+          "normalized_e": 80.7975,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "model": "gemini-3-flash-preview",
+      "composite_efficiency_score": 36.0555,
+      "avg_normalized_e": 36.0555,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 39.084,
+          "completion_time_s": 1846.53,
+          "e_bt": 8.3e-05,
+          "normalized_e": 47.8381,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 85.591,
+          "completion_time_s": 91.93,
+          "e_bt": 0.007969,
+          "normalized_e": 15.343,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 75.0,
+          "completion_time_s": 285.22,
+          "e_bt": 0.001972,
+          "normalized_e": 42.6147,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 51.685,
+          "completion_time_s": 456.07,
+          "e_bt": 0.000586,
+          "normalized_e": 55.1149,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 20.204,
+          "completion_time_s": 806.66,
+          "e_bt": 5.1e-05,
+          "normalized_e": 19.3665,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "model": "gemini-3.1-flash-lite-preview",
+      "composite_efficiency_score": 31.4505,
+      "avg_normalized_e": 37.0006,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 80.116,
+          "completion_time_s": 30.75,
+          "e_bt": 0.020874,
+          "normalized_e": 40.8952,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 62.8,
+          "completion_time_s": 132.94,
+          "e_bt": 0.002967,
+          "normalized_e": 66.8324,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 24.719,
+          "completion_time_s": 667.88,
+          "e_bt": 9.1e-05,
+          "normalized_e": 3.2742,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "model": "grok-4.3",
+      "composite_efficiency_score": 30.105,
+      "avg_normalized_e": 30.105,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 15.334,
+          "completion_time_s": 628.82,
+          "e_bt": 3.7e-05,
+          "normalized_e": 21.6231,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 84.494,
+          "completion_time_s": 3248.96,
+          "e_bt": 0.00022,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 71.4,
+          "completion_time_s": 117.77,
+          "e_bt": 0.004329,
+          "normalized_e": 100.0,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 43.446,
+          "completion_time_s": 1954.82,
+          "e_bt": 9.7e-05,
+          "normalized_e": 3.8061,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 19.403,
+          "completion_time_s": 589.41,
+          "e_bt": 6.4e-05,
+          "normalized_e": 24.5959,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "model": "claude-sonnet-4.6",
+      "composite_efficiency_score": 29.5788,
+      "avg_normalized_e": 29.5788,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 6.5,
+          "completion_time_s": 3253.12,
+          "e_bt": 1e-06,
+          "normalized_e": 0.751,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 82.091,
+          "completion_time_s": 295.01,
+          "e_bt": 0.002284,
+          "normalized_e": 4.0878,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 77.4,
+          "completion_time_s": 511.79,
+          "e_bt": 0.001171,
+          "normalized_e": 23.0964,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 59.551,
+          "completion_time_s": 615.5,
+          "e_bt": 0.000576,
+          "normalized_e": 54.1122,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 51.476,
+          "completion_time_s": 1572.12,
+          "e_bt": 0.000169,
+          "normalized_e": 65.8463,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "model": "gpt-5.2-codex",
+      "composite_efficiency_score": 28.2524,
+      "avg_normalized_e": 33.2381,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 87.993,
+          "completion_time_s": 168.27,
+          "e_bt": 0.004601,
+          "normalized_e": 8.6755,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 72.4,
+          "completion_time_s": 188.41,
+          "e_bt": 0.002782,
+          "normalized_e": 62.3388,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 37.912,
+          "completion_time_s": 1934.79,
+          "e_bt": 7.4e-05,
+          "normalized_e": 28.7,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "model": "muse-spark",
+      "composite_efficiency_score": 27.2383,
+      "avg_normalized_e": 32.045,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 74.4,
+          "completion_time_s": 495.29,
+          "e_bt": 0.001118,
+          "normalized_e": 21.8066,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 59.551,
+          "completion_time_s": 566.33,
+          "e_bt": 0.000626,
+          "normalized_e": 59.3598,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 19.674,
+          "completion_time_s": 981.3,
+          "e_bt": 3.9e-05,
+          "normalized_e": 14.9687,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "model": "gemini-2.5-flash-lite-preview-09-2025",
+      "composite_efficiency_score": 25.7729,
+      "avg_normalized_e": 51.5458,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 67.669,
+          "completion_time_s": 17.44,
+          "e_bt": 0.026253,
+          "normalized_e": 51.5458,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "model": "llama4-maverick-instruct-basic",
+      "composite_efficiency_score": 23.1918,
+      "avg_normalized_e": 46.3835,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 47.251,
+          "completion_time_s": 9.44,
+          "e_bt": 0.023646,
+          "normalized_e": 46.3835,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "model": "gpt-5-mini",
+      "composite_efficiency_score": 20.9927,
+      "avg_normalized_e": 20.9927,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 6.75,
+          "completion_time_s": 390.38,
+          "e_bt": 1.2e-05,
+          "normalized_e": 6.7492,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 86.605,
+          "completion_time_s": 33.67,
+          "e_bt": 0.022274,
+          "normalized_e": 43.6676,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 60.8,
+          "completion_time_s": 187.13,
+          "e_bt": 0.001975,
+          "normalized_e": 42.6953,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 26.966,
+          "completion_time_s": 1028.62,
+          "e_bt": 7.1e-05,
+          "normalized_e": 1.093,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 14.171,
+          "completion_time_s": 698.25,
+          "e_bt": 2.9e-05,
+          "normalized_e": 10.7583,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "model": "gpt-5.2",
+      "composite_efficiency_score": 20.9681,
+      "avg_normalized_e": 20.9681,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 54.833,
+          "completion_time_s": 6739.61,
+          "e_bt": 4.5e-05,
+          "normalized_e": 25.7977,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 85.361,
+          "completion_time_s": 151.51,
+          "e_bt": 0.004809,
+          "normalized_e": 9.087,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 75.8,
+          "completion_time_s": 640.47,
+          "e_bt": 0.000897,
+          "normalized_e": 16.4376,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 51.685,
+          "completion_time_s": 742.68,
+          "e_bt": 0.00036,
+          "normalized_e": 31.4055,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 53.499,
+          "completion_time_s": 4971.34,
+          "e_bt": 5.8e-05,
+          "normalized_e": 22.1129,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "model": "gemini-2.5-flash-preview-04-17",
+      "composite_efficiency_score": 19.3428,
+      "avg_normalized_e": 38.6855,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 56.936,
+          "completion_time_s": 16.41,
+          "e_bt": 0.019758,
+          "normalized_e": 38.6855,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "model": "claude-opus-4-5-20251101-thinking",
+      "composite_efficiency_score": 19.2717,
+      "avg_normalized_e": 19.2717,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 20.25,
+          "completion_time_s": 8211.49,
+          "e_bt": 5e-06,
+          "normalized_e": 2.8877,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 83.67,
+          "completion_time_s": 164.43,
+          "e_bt": 0.004258,
+          "normalized_e": 7.9949,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 76.4,
+          "completion_time_s": 320.54,
+          "e_bt": 0.001821,
+          "normalized_e": 38.9336,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 53.933,
+          "completion_time_s": 661.91,
+          "e_bt": 0.000439,
+          "normalized_e": 39.7717,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 20.63,
+          "completion_time_s": 2283.14,
+          "e_bt": 1.9e-05,
+          "normalized_e": 6.7705,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "model": "deepseek-v4",
+      "composite_efficiency_score": 18.9769,
+      "avg_normalized_e": 18.9769,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 35.833,
+          "completion_time_s": 5373.88,
+          "e_bt": 2.4e-05,
+          "normalized_e": 13.8169,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 87.484,
+          "completion_time_s": 715.5,
+          "e_bt": 0.00107,
+          "normalized_e": 1.6828,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 77.4,
+          "completion_time_s": 634.61,
+          "e_bt": 0.000944,
+          "normalized_e": 17.5798,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 56.18,
+          "completion_time_s": 828.34,
+          "e_bt": 0.000381,
+          "normalized_e": 33.6436,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 49.931,
+          "completion_time_s": 3418.92,
+          "e_bt": 7.3e-05,
+          "normalized_e": 28.1612,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "model": "kimi-k2.6",
+      "composite_efficiency_score": 18.9145,
+      "avg_normalized_e": 19.91,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 86.771,
+          "completion_time_s": 529.06,
+          "e_bt": 0.001423,
+          "normalized_e": 2.3827,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 76.2,
+          "completion_time_s": 519.83,
+          "e_bt": 0.001117,
+          "normalized_e": 21.792,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 57.303,
+          "completion_time_s": 795.46,
+          "e_bt": 0.000413,
+          "normalized_e": 36.9763,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 37.891,
+          "completion_time_s": 2967.77,
+          "e_bt": 4.8e-05,
+          "normalized_e": 18.4891,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "composite_efficiency_score": 17.7602,
+      "avg_normalized_e": 17.7602,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 6.417,
+          "completion_time_s": 1896.8,
+          "e_bt": 2e-06,
+          "normalized_e": 1.2554,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 81.465,
+          "completion_time_s": 188.76,
+          "e_bt": 0.003516,
+          "normalized_e": 6.5264,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 73.0,
+          "completion_time_s": 326.46,
+          "e_bt": 0.001632,
+          "normalized_e": 34.3411,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 44.944,
+          "completion_time_s": 2241.56,
+          "e_bt": 9e-05,
+          "normalized_e": 3.1301,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 47.969,
+          "completion_time_s": 2055.12,
+          "e_bt": 0.000112,
+          "normalized_e": 43.5481,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "model": "glm-5.1",
+      "composite_efficiency_score": 17.5695,
+      "avg_normalized_e": 18.4942,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 81.38,
+          "completion_time_s": 226.42,
+          "e_bt": 0.002925,
+          "normalized_e": 5.3562,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 76.4,
+          "completion_time_s": 527.07,
+          "e_bt": 0.001107,
+          "normalized_e": 21.5593,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 53.933,
+          "completion_time_s": 881.67,
+          "e_bt": 0.00033,
+          "normalized_e": 28.2826,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 31.456,
+          "completion_time_s": 2014.73,
+          "e_bt": 4.9e-05,
+          "normalized_e": 18.7787,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "composite_efficiency_score": 16.4408,
+      "avg_normalized_e": 16.4408,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 15.25,
+          "completion_time_s": 1170.49,
+          "e_bt": 2e-05,
+          "normalized_e": 11.4895,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 84.009,
+          "completion_time_s": 60.09,
+          "e_bt": 0.011745,
+          "normalized_e": 22.82,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 69.8,
+          "completion_time_s": 262.55,
+          "e_bt": 0.001856,
+          "normalized_e": 39.7781,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 39.888,
+          "completion_time_s": 2527.93,
+          "e_bt": 6.3e-05,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 26.097,
+          "completion_time_s": 3276.22,
+          "e_bt": 2.1e-05,
+          "normalized_e": 7.6165,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "model": "gpt-5",
+      "composite_efficiency_score": 15.7684,
+      "avg_normalized_e": 15.7684,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 20.0,
+          "completion_time_s": 2608.25,
+          "e_bt": 1.5e-05,
+          "normalized_e": 8.8683,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 85.911,
+          "completion_time_s": 150.44,
+          "e_bt": 0.004906,
+          "normalized_e": 9.2788,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 69.0,
+          "completion_time_s": 232.84,
+          "e_bt": 0.002045,
+          "normalized_e": 44.3823,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 37.079,
+          "completion_time_s": 986.1,
+          "e_bt": 0.000139,
+          "normalized_e": 8.3021,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 20.088,
+          "completion_time_s": 1852.15,
+          "e_bt": 2.2e-05,
+          "normalized_e": 8.0103,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "model": "o4-mini",
+      "composite_efficiency_score": 15.0938,
+      "avg_normalized_e": 21.5625,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 4.834,
+          "completion_time_s": 480.19,
+          "e_bt": 5e-06,
+          "normalized_e": 2.814,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 82.208,
+          "completion_time_s": 32.84,
+          "e_bt": 0.020579,
+          "normalized_e": 40.311,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 27
+    },
+    {
+      "model": "claude-haiku-4-5-20251001-thinking",
+      "composite_efficiency_score": 14.9048,
+      "avg_normalized_e": 15.6892,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "ioi",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 6.166,
+          "completion_time_s": 7415.35,
+          "e_bt": 1e-06,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 66.6,
+          "completion_time_s": 242.17,
+          "e_bt": 0.001832,
+          "normalized_e": 39.193,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 38.202,
+          "completion_time_s": 655.04,
+          "e_bt": 0.000223,
+          "normalized_e": 17.0467,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 11.393,
+          "completion_time_s": 775.88,
+          "e_bt": 1.7e-05,
+          "normalized_e": 6.0172,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "model": "gpt-5.1",
+      "composite_efficiency_score": 14.7239,
+      "avg_normalized_e": 14.7239,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 21.5,
+          "completion_time_s": 1750.07,
+          "e_bt": 2.6e-05,
+          "normalized_e": 15.274,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 86.486,
+          "completion_time_s": 141.24,
+          "e_bt": 0.005296,
+          "normalized_e": 10.0506,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 69.8,
+          "completion_time_s": 500.65,
+          "e_bt": 0.000973,
+          "normalized_e": 18.2893,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 44.944,
+          "completion_time_s": 886.17,
+          "e_bt": 0.000228,
+          "normalized_e": 17.5869,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 24.606,
+          "completion_time_s": 1836.19,
+          "e_bt": 3.3e-05,
+          "normalized_e": 12.4187,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 29
+    },
+    {
+      "model": "grok-3-mini-fast-low-reasoning",
+      "composite_efficiency_score": 13.9391,
+      "avg_normalized_e": 27.8783,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 66.265,
+          "completion_time_s": 30.71,
+          "e_bt": 0.0143,
+          "normalized_e": 27.8783,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 30
+    },
+    {
+      "model": "qwen-3.6-plus",
+      "composite_efficiency_score": 13.707,
+      "avg_normalized_e": 14.4284,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 85.952,
+          "completion_time_s": 475.7,
+          "e_bt": 0.001553,
+          "normalized_e": 2.6398,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 73.4,
+          "completion_time_s": 424.17,
+          "e_bt": 0.00127,
+          "normalized_e": 25.521,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 44.944,
+          "completion_time_s": 840.67,
+          "e_bt": 0.00024,
+          "normalized_e": 18.8811,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 25.565,
+          "completion_time_s": 2289.98,
+          "e_bt": 2.9e-05,
+          "normalized_e": 10.6717,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "model": "claude-sonnet-4-5-20250929-thinking",
+      "composite_efficiency_score": 13.4508,
+      "avg_normalized_e": 13.4508,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 18.334,
+          "completion_time_s": 3315.17,
+          "e_bt": 1e-05,
+          "normalized_e": 5.8633,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 72.996,
+          "completion_time_s": 109.55,
+          "e_bt": 0.004864,
+          "normalized_e": 9.1956,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 70.0,
+          "completion_time_s": 360.56,
+          "e_bt": 0.001359,
+          "normalized_e": 27.685,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 41.573,
+          "completion_time_s": 736.92,
+          "e_bt": 0.000235,
+          "normalized_e": 18.2781,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 22.621,
+          "completion_time_s": 2962.13,
+          "e_bt": 1.7e-05,
+          "normalized_e": 6.2322,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 32
+    },
+    {
+      "model": "gemini-2.5-flash-lite-preview-09-2025-thinking",
+      "composite_efficiency_score": 12.8191,
+      "avg_normalized_e": 25.6383,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 71.385,
+          "completion_time_s": 38.7,
+          "e_bt": 0.013169,
+          "normalized_e": 25.6383,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 33
+    },
+    {
+      "model": "kimi-k2.5",
+      "composite_efficiency_score": 12.3023,
+      "avg_normalized_e": 12.3023,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 17.667,
+          "completion_time_s": 3828.39,
+          "e_bt": 8e-06,
+          "normalized_e": 4.7146,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 83.868,
+          "completion_time_s": 200.02,
+          "e_bt": 0.003517,
+          "normalized_e": 6.5276,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 70.0,
+          "completion_time_s": 339.24,
+          "e_bt": 0.001444,
+          "normalized_e": 29.7642,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 40.449,
+          "completion_time_s": 756.4,
+          "e_bt": 0.000216,
+          "normalized_e": 16.3659,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 17.536,
+          "completion_time_s": 2570.38,
+          "e_bt": 1.2e-05,
+          "normalized_e": 4.1391,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 34
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "composite_efficiency_score": 11.9182,
+      "avg_normalized_e": 23.8364,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 58.158,
+          "completion_time_s": 27.59,
+          "e_bt": 0.012258,
+          "normalized_e": 23.8364,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 35
+    },
+    {
+      "model": "minimax-m2.1",
+      "composite_efficiency_score": 11.8172,
+      "avg_normalized_e": 11.8172,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 4.916,
+          "completion_time_s": 3242.76,
+          "e_bt": 1e-06,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 81.756,
+          "completion_time_s": 246.07,
+          "e_bt": 0.002716,
+          "normalized_e": 4.9431,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 74.8,
+          "completion_time_s": 386.26,
+          "e_bt": 0.001449,
+          "normalized_e": 29.8649,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 47.191,
+          "completion_time_s": 839.05,
+          "e_bt": 0.000265,
+          "normalized_e": 21.5177,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 14.853,
+          "completion_time_s": 3065.62,
+          "e_bt": 7e-06,
+          "normalized_e": 2.2604,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 36
+    },
+    {
+      "model": "minimax-m2.5-lightning",
+      "composite_efficiency_score": 11.7835,
+      "avg_normalized_e": 12.4037,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 6.666,
+          "completion_time_s": 22888.0,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 79.208,
+          "completion_time_s": 312.01,
+          "e_bt": 0.002011,
+          "normalized_e": 3.5463,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 74.2,
+          "completion_time_s": 402.94,
+          "e_bt": 0.001366,
+          "normalized_e": 27.8642,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 41.573,
+          "completion_time_s": 754.51,
+          "e_bt": 0.000229,
+          "normalized_e": 17.7044,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 37
+    },
+    {
+      "model": "gemini-2.5-flash-preview-09-2025",
+      "composite_efficiency_score": 11.7052,
+      "avg_normalized_e": 23.4104,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 75.063,
+          "completion_time_s": 46.78,
+          "e_bt": 0.012043,
+          "normalized_e": 23.4104,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 38
+    },
+    {
+      "model": "gemini-2.5-flash-preview-09-2025-thinking",
+      "composite_efficiency_score": 11.5974,
+      "avg_normalized_e": 23.1947,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 76.214,
+          "completion_time_s": 48.67,
+          "e_bt": 0.011934,
+          "normalized_e": 23.1947,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "model": "devstral-2",
+      "composite_efficiency_score": 11.3816,
+      "avg_normalized_e": 13.3901,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 0.666,
+          "completion_time_s": 8044.65,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 51.841,
+          "completion_time_s": 87.57,
+          "e_bt": 0.003069,
+          "normalized_e": 5.6414,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 62.8,
+          "completion_time_s": 243.52,
+          "e_bt": 0.00162,
+          "normalized_e": 34.0289,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 40
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "composite_efficiency_score": 11.3675,
+      "avg_normalized_e": 11.9658,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 17.084,
+          "completion_time_s": 2964.8,
+          "e_bt": 1e-05,
+          "normalized_e": 5.6927,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 79.164,
+          "completion_time_s": 164.66,
+          "e_bt": 0.003806,
+          "normalized_e": 7.1008,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 54.4,
+          "completion_time_s": 207.79,
+          "e_bt": 0.001424,
+          "normalized_e": 29.2725,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 30.337,
+          "completion_time_s": 796.53,
+          "e_bt": 0.000116,
+          "normalized_e": 5.7974,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "model": "deepseek-v3-0324",
+      "composite_efficiency_score": 11.2084,
+      "avg_normalized_e": 16.0121,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 1.667,
+          "completion_time_s": 171.48,
+          "e_bt": 2e-06,
+          "normalized_e": 0.9371,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 65.478,
+          "completion_time_s": 26.93,
+          "e_bt": 0.01592,
+          "normalized_e": 31.087,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 42
+    },
+    {
+      "model": "qwen-3.6-max",
+      "composite_efficiency_score": 11.0029,
+      "avg_normalized_e": 15.7184,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 72.8,
+          "completion_time_s": 1079.23,
+          "e_bt": 0.000491,
+          "normalized_e": 6.5512,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 51.685,
+          "completion_time_s": 897.85,
+          "e_bt": 0.000298,
+          "normalized_e": 24.8856,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 43
+    },
+    {
+      "model": "deepseek-v3p2",
+      "composite_efficiency_score": 10.9531,
+      "avg_normalized_e": 12.886,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 14.416,
+          "completion_time_s": 2384.52,
+          "e_bt": 9e-06,
+          "normalized_e": 5.0399,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 69.856,
+          "completion_time_s": 39.34,
+          "e_bt": 0.012403,
+          "normalized_e": 24.1234,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 34.831,
+          "completion_time_s": 804.54,
+          "e_bt": 0.000151,
+          "normalized_e": 9.4948,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "model": "o3",
+      "composite_efficiency_score": 10.6836,
+      "avg_normalized_e": 21.3672,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 83.914,
+          "completion_time_s": 63.95,
+          "e_bt": 0.011011,
+          "normalized_e": 21.3672,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "model": "grok-code-fast-1",
+      "composite_efficiency_score": 10.4979,
+      "avg_normalized_e": 14.997,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 4.333,
+          "completion_time_s": 1083.86,
+          "e_bt": 2e-06,
+          "normalized_e": 1.0017,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 61.969,
+          "completion_time_s": 25.84,
+          "e_bt": 0.014862,
+          "normalized_e": 28.9922,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "model": "glm-4.7",
+      "composite_efficiency_score": 10.3586,
+      "avg_normalized_e": 10.9038,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 7.584,
+          "completion_time_s": 5316.88,
+          "e_bt": 1e-06,
+          "normalized_e": 0.6256,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 82.234,
+          "completion_time_s": 393.28,
+          "e_bt": 0.00172,
+          "normalized_e": 2.9695,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 69.4,
+          "completion_time_s": 365.8,
+          "e_bt": 0.001317,
+          "normalized_e": 26.6541,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 38.202,
+          "completion_time_s": 777.51,
+          "e_bt": 0.000188,
+          "normalized_e": 13.3659,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "model": "glm-5",
+      "composite_efficiency_score": 10.1974,
+      "avg_normalized_e": 10.1974,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 22.0,
+          "completion_time_s": 6806.94,
+          "e_bt": 7e-06,
+          "normalized_e": 4.1117,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 81.868,
+          "completion_time_s": 289.75,
+          "e_bt": 0.002313,
+          "normalized_e": 4.1449,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 71.4,
+          "completion_time_s": 513.84,
+          "e_bt": 0.000992,
+          "normalized_e": 18.7516,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 49.438,
+          "completion_time_s": 875.6,
+          "e_bt": 0.000279,
+          "normalized_e": 22.9565,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 23.359,
+          "completion_time_s": 13455.79,
+          "e_bt": 4e-06,
+          "normalized_e": 1.0225,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "model": "gpt-4.1",
+      "composite_efficiency_score": 9.4617,
+      "avg_normalized_e": 18.9234,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 54.666,
+          "completion_time_s": 30.57,
+          "e_bt": 0.009777,
+          "normalized_e": 18.9234,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "model": "claude-opus-4-1",
+      "composite_efficiency_score": 9.25,
+      "avg_normalized_e": 13.2143,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 12.516,
+          "completion_time_s": 6124.9,
+          "e_bt": 3e-06,
+          "normalized_e": 1.479,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 64.559,
+          "completion_time_s": 32.51,
+          "e_bt": 0.012821,
+          "normalized_e": 24.9495,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 50
+    },
+    {
+      "model": "o3-mini",
+      "composite_efficiency_score": 9.1855,
+      "avg_normalized_e": 18.3709,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 71.484,
+          "completion_time_s": 53.8,
+          "e_bt": 0.009498,
+          "normalized_e": 18.3709,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "model": "grok-4-fast",
+      "composite_efficiency_score": 9.0312,
+      "avg_normalized_e": 10.625,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 11.5,
+          "completion_time_s": 1408.45,
+          "e_bt": 9e-06,
+          "normalized_e": 5.4298,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 80.641,
+          "completion_time_s": 103.45,
+          "e_bt": 0.006286,
+          "normalized_e": 12.0114,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 29.213,
+          "completion_time_s": 431.27,
+          "e_bt": 0.000198,
+          "normalized_e": 14.4338,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 52
+    },
+    {
+      "model": "qwen3.5-flash",
+      "composite_efficiency_score": 8.8273,
+      "avg_normalized_e": 10.385,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 83.28,
+          "completion_time_s": 209.29,
+          "e_bt": 0.003314,
+          "normalized_e": 6.1262,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 64.4,
+          "completion_time_s": 363.1,
+          "e_bt": 0.001142,
+          "normalized_e": 22.406,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 24.719,
+          "completion_time_s": 716.5,
+          "e_bt": 8.5e-05,
+          "normalized_e": 2.623,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "model": "gpt-oss-120b",
+      "composite_efficiency_score": 8.1769,
+      "avg_normalized_e": 16.3539,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 83.234,
+          "completion_time_s": 81.7,
+          "e_bt": 0.008479,
+          "normalized_e": 16.3539,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "model": "mistral-large-2512",
+      "composite_efficiency_score": 7.3686,
+      "avg_normalized_e": 10.5265,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 4.0,
+          "completion_time_s": 6788.58,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 55.337,
+          "completion_time_s": 28.89,
+          "e_bt": 0.0106,
+          "normalized_e": 20.5531,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "model": "qwen3.5-plus-thinking",
+      "composite_efficiency_score": 7.328,
+      "avg_normalized_e": 7.7137,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 85.326,
+          "completion_time_s": 247.47,
+          "e_bt": 0.002942,
+          "normalized_e": 5.3899,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 71.2,
+          "completion_time_s": 496.25,
+          "e_bt": 0.001022,
+          "normalized_e": 19.4683,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 41.573,
+          "completion_time_s": 1877.15,
+          "e_bt": 9.2e-05,
+          "normalized_e": 3.3354,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 15.738,
+          "completion_time_s": 3015.62,
+          "e_bt": 8e-06,
+          "normalized_e": 2.6612,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "model": "claude-sonnet-4-20250514-thinking",
+      "composite_efficiency_score": 6.3705,
+      "avg_normalized_e": 9.1007,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 4.584,
+          "completion_time_s": 2216.29,
+          "e_bt": 1e-06,
+          "normalized_e": 0.5483,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 62.392,
+          "completion_time_s": 42.61,
+          "e_bt": 0.009136,
+          "normalized_e": 17.6532,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "model": "gemma-4-31b-it",
+      "composite_efficiency_score": 6.322,
+      "avg_normalized_e": 12.644,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 39.326,
+          "completion_time_s": 855.3,
+          "e_bt": 0.000181,
+          "normalized_e": 12.644,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "model": "deepseek-r1",
+      "composite_efficiency_score": 5.4539,
+      "avg_normalized_e": 10.9078,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 70.221,
+          "completion_time_s": 86.07,
+          "e_bt": 0.005729,
+          "normalized_e": 10.9078,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "model": "moonshotaikimi-k2-instruct",
+      "composite_efficiency_score": 5.2311,
+      "avg_normalized_e": 6.1542,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 1.25,
+          "completion_time_s": 1551.1,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 70.449,
+          "completion_time_s": 66.65,
+          "e_bt": 0.007446,
+          "normalized_e": 14.3085,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 25.843,
+          "completion_time_s": 702.2,
+          "e_bt": 9.5e-05,
+          "normalized_e": 3.6541,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 60
+    },
+    {
+      "model": "qwen3-max",
+      "composite_efficiency_score": 5.2241,
+      "avg_normalized_e": 6.1459,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 15.666,
+          "completion_time_s": 2045.25,
+          "e_bt": 1.2e-05,
+          "normalized_e": 6.9391,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 78.215,
+          "completion_time_s": 107.84,
+          "e_bt": 0.005673,
+          "normalized_e": 10.7965,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 24.719,
+          "completion_time_s": 912.42,
+          "e_bt": 6.7e-05,
+          "normalized_e": 0.7023,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 61
+    },
+    {
+      "model": "claude-opus-4-20250514-thinking",
+      "composite_efficiency_score": 4.9964,
+      "avg_normalized_e": 9.9929,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 70.188,
+          "completion_time_s": 93.54,
+          "e_bt": 0.005267,
+          "normalized_e": 9.9929,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 62
+    },
+    {
+      "model": "magistral-small-2509",
+      "composite_efficiency_score": 4.8933,
+      "avg_normalized_e": 9.7866,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 72.131,
+          "completion_time_s": 100.78,
+          "e_bt": 0.005163,
+          "normalized_e": 9.7866,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 63
+    },
+    {
+      "model": "claude-opus-4-1-20250805-thinking",
+      "composite_efficiency_score": 4.5262,
+      "avg_normalized_e": 9.0525,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 66.456,
+          "completion_time_s": 92.17,
+          "e_bt": 0.004792,
+          "normalized_e": 9.0525,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 64
+    },
+    {
+      "model": "glm-4.6",
+      "composite_efficiency_score": 3.8575,
+      "avg_normalized_e": 4.5382,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 4.334,
+          "completion_time_s": 7105.85,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 81.036,
+          "completion_time_s": 236.18,
+          "e_bt": 0.00278,
+          "normalized_e": 5.0702,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 28.09,
+          "completion_time_s": 576.09,
+          "e_bt": 0.000137,
+          "normalized_e": 8.0445,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 65
+    },
+    {
+      "model": "claude-3-7-sonnet-20250219-thinking",
+      "composite_efficiency_score": 3.5307,
+      "avg_normalized_e": 7.0614,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 60.436,
+          "completion_time_s": 96.47,
+          "e_bt": 0.003786,
+          "normalized_e": 7.0614,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 66
+    },
+    {
+      "model": "qwen3-max-preview",
+      "composite_efficiency_score": 3.4317,
+      "avg_normalized_e": 4.9024,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 7.75,
+          "completion_time_s": 3372.05,
+          "e_bt": 2e-06,
+          "normalized_e": 1.03,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 66.91,
+          "completion_time_s": 96.25,
+          "e_bt": 0.004652,
+          "normalized_e": 8.7748,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 67
+    },
+    {
+      "model": "qwen3.6-27b",
+      "composite_efficiency_score": 3.0949,
+      "avg_normalized_e": 3.641,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 70.0,
+          "completion_time_s": 1028.73,
+          "e_bt": 0.000476,
+          "normalized_e": 6.1917,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 44.944,
+          "completion_time_s": 2007.63,
+          "e_bt": 0.000101,
+          "normalized_e": 4.2314,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 11.941,
+          "completion_time_s": 9762.86,
+          "e_bt": 1e-06,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 68
+    },
+    {
+      "model": "kimi-k2-thinking",
+      "composite_efficiency_score": 2.6337,
+      "avg_normalized_e": 3.0985,
+      "participation_penalty": 0.85,
+      "n_benchmarks": 3,
+      "benchmarks_participated": [
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 63.145,
+          "completion_time_s": 1150.62,
+          "e_bt": 0.000347,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 60.2,
+          "completion_time_s": 1632.21,
+          "e_bt": 0.000222,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 37.079,
+          "completion_time_s": 986.55,
+          "e_bt": 0.000139,
+          "normalized_e": 8.2954,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 69
+    },
+    {
+      "model": "o1",
+      "composite_efficiency_score": 2.4987,
+      "avg_normalized_e": 4.9974,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 50.264,
+          "completion_time_s": 92.08,
+          "e_bt": 0.002744,
+          "normalized_e": 4.9974,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 70
+    },
+    {
+      "model": "grok-3-mini-fast-high-reasoning",
+      "composite_efficiency_score": 2.4743,
+      "avg_normalized_e": 4.9485,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 76.22,
+          "completion_time_s": 213.66,
+          "e_bt": 0.002719,
+          "normalized_e": 4.9485,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 71
+    },
+    {
+      "model": "langstonnimnvidiallama-3.3-nemotron-super-49b-v1-42e84561-thinking",
+      "composite_efficiency_score": 1.9956,
+      "avg_normalized_e": 3.9912,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 58.369,
+          "completion_time_s": 152.4,
+          "e_bt": 0.002236,
+          "normalized_e": 3.9912,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 72
+    },
+    {
+      "model": "magistral-medium-2509",
+      "composite_efficiency_score": 1.8723,
+      "avg_normalized_e": 2.6747,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 0.666,
+          "completion_time_s": 2211.78,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 74.86,
+          "completion_time_s": 209.97,
+          "e_bt": 0.002669,
+          "normalized_e": 4.8494,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 73
+    },
+    {
+      "model": "gemini-2.5-flash-preview-04-17-thinking",
+      "composite_efficiency_score": 1.5231,
+      "avg_normalized_e": 3.0462,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 46.871,
+          "completion_time_s": 124.95,
+          "e_bt": 0.001758,
+          "normalized_e": 3.0462,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 74
+    },
+    {
+      "model": "glm-4.5",
+      "composite_efficiency_score": 0.8284,
+      "avg_normalized_e": 1.1834,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 2.917,
+          "completion_time_s": 2336.43,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 67.446,
+          "completion_time_s": 391.27,
+          "e_bt": 0.001163,
+          "normalized_e": 1.8669,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 75
+    },
+    {
+      "model": "qwen3-235b-a22b",
+      "composite_efficiency_score": 0.8274,
+      "avg_normalized_e": 1.182,
+      "participation_penalty": 0.7,
+      "n_benchmarks": 2,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 0.0,
+          "completion_time_s": 352.56,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 70.62,
+          "completion_time_s": 429.48,
+          "e_bt": 0.001161,
+          "normalized_e": 1.8641,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 76
+    },
+    {
+      "model": "mistral-medium-3.5",
+      "composite_efficiency_score": 0.6907,
+      "avg_normalized_e": 1.3814,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 30.337,
+          "completion_time_s": 1253.13,
+          "e_bt": 7.3e-05,
+          "normalized_e": 1.3814,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 77
+    },
+    {
+      "model": "gemini-3-flash-1225",
+      "composite_efficiency_score": 0.5629,
+      "avg_normalized_e": 1.1258,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "ioi"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 2.611,
+          "completion_time_s": 350.19,
+          "e_bt": 2e-06,
+          "normalized_e": 1.1258,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 78
+    },
+    {
+      "model": "deepseek-v3p1",
+      "composite_efficiency_score": 0.25,
+      "avg_normalized_e": 0.5,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 22.472,
+          "completion_time_s": 837.85,
+          "e_bt": 6e-05,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 79
+    },
+    {
+      "model": "labs-devstral-small-2512",
+      "composite_efficiency_score": 0.25,
+      "avg_normalized_e": 0.5,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "ioi"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 2.5,
+          "completion_time_s": 7466.6,
+          "e_bt": 0.0,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 80
+    },
+    {
+      "model": "grok-4.1-fast",
+      "composite_efficiency_score": 0.25,
+      "avg_normalized_e": 0.5,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "ioi"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 7.667,
+          "completion_time_s": 7675.29,
+          "e_bt": 1e-06,
+          "normalized_e": 0.5,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 81
+    }
+  ]
+}
