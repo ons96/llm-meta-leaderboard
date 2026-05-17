@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Meta-Leaderboard — Agentic Coding Efficiency</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --orange: #d29922;
+    --red: #f85149;
+    --hover: #1c2128;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 { font-size: 1.6rem; font-weight: 600; }
+  h1 small { font-size: 0.9rem; color: var(--text-muted); font-weight: 400; margin-left: 8px; }
+  .subtitle { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
+  .controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.9rem;
+    outline: none;
+  }
+  .search-box:focus { border-color: var(--accent); }
+  .stat-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .stat-badge strong { color: var(--text); }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  thead { position: sticky; top: 0; z-index: 2; }
+  th {
+    background: #1c2128;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--border);
+  }
+  th:hover { background: #242932; }
+  th .sort-arrow { margin-left: 4px; color: var(--text-muted); font-size: 0.7rem; }
+  th.sorted .sort-arrow { color: var(--accent); }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: var(--hover); }
+  tr.expanded { background: var(--hover); }
+  tr.expanded + .detail-row { display: table-row; }
+  .detail-row { display: none; }
+  .detail-row td { padding: 0; }
+  .detail-inner {
+    padding: 12px 12px 12px 48px;
+    background: rgba(255,255,255,0.02);
+    border-bottom: 1px solid var(--border);
+  }
+  .detail-inner table { font-size: 0.8rem; }
+  .detail-inner th { background: transparent; padding: 6px 8px; font-weight: 500; cursor: default; }
+  .detail-inner td { padding: 6px 8px; border-bottom: 1px solid rgba(48,54,61,0.5); }
+
+  .rank { font-weight: 700; color: var(--text); width: 40px; }
+  .rank-1 { color: #d4af37; }
+  .rank-2 { color: #a0a0a0; }
+  .rank-3 { color: #cd7f32; }
+
+  .model-name { font-weight: 600; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .model-name .expand-btn {
+    display: inline-block;
+    width: 18px; height: 18px;
+    line-height: 16px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    margin-right: 8px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    background: transparent;
+    vertical-align: middle;
+  }
+  .model-name .expand-btn:hover { background: var(--card); color: var(--text); }
+
+  .score-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .score-bar {
+    height: 8px;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 60px;
+    max-width: 120px;
+    background: #21262d;
+    overflow: hidden;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s;
+  }
+  .score-value { font-weight: 600; min-width: 50px; text-align: right; }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+  .badge-green { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge-orange { background: rgba(210,153,34,0.15); color: var(--orange); }
+  .badge-red { background: rgba(248,81,73,0.15); color: var(--red); }
+  .badge-gray { background: rgba(139,148,158,0.15); color: var(--text-muted); }
+
+  .benchmark-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+  .benchmark-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    background: rgba(88,166,255,0.1);
+    color: var(--accent);
+    border: 1px solid rgba(88,166,255,0.2);
+  }
+
+  .empty-state { text-align: center; padding: 48px; color: var(--text-muted); }
+
+  .delta-up { color: var(--green); }
+  .delta-down { color: var(--red); }
+
+  .footer {
+    margin-top: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+  }
+  .footer a { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    body { padding: 12px; }
+    th, td { padding: 8px; font-size: 0.8rem; }
+    .score-bar-wrap { min-width: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>LLM Meta-Leaderboard <small>Agentic Coding Efficiency</small></h1>
+    <div class="subtitle">
+      Composite efficiency score: <strong>E_bt = (accuracy² / time)</strong>, Min-Max normalized per benchmark, coverage-weighted.
+      Updated every 12h from <strong>vals.ai</strong> (5 coding benchmarks).
+    </div>
+  </header>
+
+  <div class="controls">
+    <input class="search-box" id="search" type="text" placeholder="Search model name..." oninput="render()">
+    <span class="stat-badge" id="stats">loading...</span>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sort('rank')"># <span class="sort-arrow" id="arrow-rank">▲</span></th>
+          <th onclick="sort('model')">Model <span class="sort-arrow" id="arrow-model">▽</span></th>
+          <th onclick="sort('composite_efficiency_score')">Composite▲ <span class="sort-arrow" id="arrow-composite_efficiency_score">▼</span></th>
+          <th onclick="sort('avg_normalized_e')">Avg Norm▲ <span class="sort-arrow" id="arrow-avg_normalized_e">▽</span></th>
+          <th onclick="sort('n_benchmarks')"># Benchs <span class="sort-arrow" id="arrow-n_benchmarks">▽</span></th>
+          <th onclick="sort('participation_penalty')">Penalty <span class="sort-arrow" id="arrow-participation_penalty">▽</span></th>
+          <th>Benchmarks</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    Data from <a href="https://www.vals.ai" target="_blank">Vals AI</a> ·
+    Generated <span id="gen-time">—</span> ·
+    <a href="data/leaderboard.json">leaderboard.json</a> ·
+    <a href="data/leaderboard.csv">leaderboard.csv</a> ·
+    <a href="https://github.com/ons96/llm-meta-leaderboard">source</a>
+  </div>
+</div>
+
+<script>
+let data = null;
+let sortKey = 'composite_efficiency_score';
+let sortDir = -1;
+
+function scoreColor(v) {
+  if (v >= 60) return 'var(--green)';
+  if (v >= 35) return 'var(--orange)';
+  return 'var(--red)';
+}
+
+function badgeN(n) {
+  if (n >= 5) return 'badge-green';
+  if (n >= 3) return 'badge-orange';
+  return 'badge-red';
+}
+
+function fmtNum(v, d) { return Number(v).toFixed(d || 2); }
+
+function escapeHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function render() {
+  if (!data) return;
+  const q = document.getElementById('search').value.toLowerCase();
+  const tbody = document.getElementById('tbody');
+  const rows = data.leaderboard;
+  document.getElementById('stats').innerHTML =
+    `<strong>${rows.length}</strong> models · <strong>${data.n_benchmarks}</strong> benchmarks`;
+
+  const sorted = [...rows].sort((a, b) => {
+    let va = a[sortKey], vb = b[sortKey];
+    if (typeof va === 'string') {
+      va = va.toLowerCase(); vb = (vb || '').toLowerCase();
+      return sortDir * va.localeCompare(vb);
+    }
+    return sortDir * ((va || 0) - (vb || 0));
+  });
+
+  const filtered = q ? sorted.filter(r => r.model.toLowerCase().includes(q)) : sorted;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty-state">No models match your search</td></tr>';
+    return;
+  }
+
+  let html = '';
+  filtered.forEach((r, i) => {
+    const trueRank = r.rank;
+    const rankClass = trueRank <= 3 ? `rank-${trueRank}` : '';
+    const score = r.composite_efficiency_score;
+    const color = scoreColor(score);
+    const detailId = `detail-${i}`;
+    const benchTags = (r.benchmarks_participated || []).map(b => `<span class="benchmark-tag">${b}</span>`).join('');
+
+    html += `<tr onclick="toggleDetail('${detailId}')" style="cursor:pointer">
+      <td><span class="rank ${rankClass}">${trueRank}</span></td>
+      <td><span class="model-name"><span class="expand-btn">+</span>${escapeHtml(r.model)}</span></td>
+      <td>
+        <div class="score-bar-wrap">
+          <div class="score-bar"><div class="score-bar-fill" style="width:${Math.min(score * 1.1, 100)}%;background:${color}"></div></div>
+          <span class="score-value" style="color:${color}">${fmtNum(score, 2)}</span>
+        </div>
+      </td>
+      <td>${fmtNum(r.avg_normalized_e, 2)}</td>
+      <td><span class="badge ${badgeN(r.n_benchmarks)}">${r.n_benchmarks}</span></td>
+      <td>${r.participation_penalty < 1 ? fmtNum(r.participation_penalty, 2) + '×' : '—'}</td>
+      <td><div class="benchmark-tags">${benchTags}</div></td>
+    </tr>`;
+
+    html += `<tr class="detail-row" id="${detailId}"><td colspan="7"><div class="detail-inner">`;
+    if (r.benchmark_details && r.benchmark_details.length) {
+      html += `<table><thead><tr><th>Benchmark</th><th>Score (%)</th><th>Time (s)</th><th>E_bt</th><th>Norm E</th><th>Source</th></tr></thead><tbody>`;
+      r.benchmark_details.forEach(d => {
+        html += `<tr>
+          <td><span class="benchmark-tag">${d.benchmark}</span></td>
+          <td style="font-weight:600;color:${scoreColor(d.score)}">${fmtNum(d.score, 2)}</td>
+          <td>${fmtNum(d.completion_time_s, 1)}s</td>
+          <td style="font-size:0.75rem;color:var(--text-muted)">${fmtNum(d.e_bt, 6)}</td>
+          <td style="font-weight:600;color:${scoreColor(d.normalized_e)}">${fmtNum(d.normalized_e, 2)}</td>
+          <td>${d.source}</td>
+        </tr>`;
+      });
+      html += `</tbody></table>`;
+    }
+    html += `</div></td></tr>`;
+  });
+
+  tbody.innerHTML = html;
+  document.getElementById('gen-time').textContent = data.generated_at ? new Date(data.generated_at).toLocaleString() : '—';
+
+  document.querySelectorAll('.sort-arrow').forEach(el => el.textContent = '▽');
+  const arrow = document.getElementById(`arrow-${sortKey}`);
+  if (arrow) { arrow.textContent = sortDir === -1 ? '▼' : '▲'; arrow.parentElement.classList.add('sorted'); }
+}
+
+function toggleDetail(id) {
+  const row = document.getElementById(id);
+  if (!row) return;
+  const displayed = row.style.display !== 'table-row';
+  row.style.display = displayed ? 'table-row' : 'none';
+}
+
+function sort(key) {
+  if (key === sortKey) sortDir *= -1;
+  else { sortKey = key; sortDir = key === 'rank' ? 1 : -1; }
+  render();
+}
+
+(async () => {
+  try {
+    const resp = await fetch('data/leaderboard.json');
+    data = await resp.json();
+  } catch {
+    try {
+      const resp = await fetch(
+        'https://raw.githubusercontent.com/ons96/llm-meta-leaderboard/main/data/leaderboard.json'
+      );
+      data = await resp.json();
+    } catch {
+      document.getElementById('tbody').innerHTML =
+        '<tr><td colspan="7" class="empty-state">Failed to load leaderboard data</td></tr>';
+      return;
+    }
+  }
+  render();
+})();
+</script>
+</body>
+</html>
