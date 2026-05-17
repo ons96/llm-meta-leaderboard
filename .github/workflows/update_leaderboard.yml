@@ -1,0 +1,55 @@
+name: Update Meta-Leaderboard
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-leaderboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run leaderboard pipeline
+        run: python scraper.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push updated data
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/leaderboard.json data/leaderboard.csv data/last_run_state.json
+          git commit -m "chore: update meta-leaderboard data [skip ci]"
+          git push
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          echo "::error::Pipeline failed! Old leaderboard data preserved. Check logs for scraper errors."
