@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-20T04:13:07.460175+00:00",
+  "generated_at": "2026-05-22T04:16:44.982158+00:00",
   "pipeline_version": "1.0.0",
-  "n_models": 82,
+  "n_models": 83,
   "n_benchmarks": 5,
   "n_benchmarks_expected": 5,
   "leaderboard": [
@@ -2805,6 +2805,27 @@
       "rank": 72
     },
     {
+      "model": "command-a",
+      "composite_efficiency_score": 2.393,
+      "avg_normalized_e": 4.7859,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 79.382,
+          "completion_time_s": 238.97,
+          "e_bt": 0.002637,
+          "normalized_e": 4.7859,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 73
+    },
+    {
       "model": "langstonnimnvidiallama-3.3-nemotron-super-49b-v1-42e84561-thinking",
       "composite_efficiency_score": 1.9956,
       "avg_normalized_e": 3.9912,
@@ -2823,7 +2844,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 73
+      "rank": 74
     },
     {
       "model": "magistral-medium-2509",
@@ -2853,7 +2874,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 74
+      "rank": 75
     },
     {
       "model": "gemini-2.5-flash-preview-04-17-thinking",
@@ -2874,7 +2895,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 75
+      "rank": 76
     },
     {
       "model": "glm-4.5",
@@ -2904,7 +2925,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 76
+      "rank": 77
     },
     {
       "model": "qwen3-235b-a22b",
@@ -2934,7 +2955,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 77
+      "rank": 78
     },
     {
       "model": "mistral-medium-3.5",
@@ -2955,7 +2976,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 78
+      "rank": 79
     },
     {
       "model": "gemini-3-flash-1225",
@@ -2976,7 +2997,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 79
+      "rank": 80
     },
     {
       "model": "deepseek-v3p1",
@@ -2997,7 +3018,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 80
+      "rank": 81
     },
     {
       "model": "labs-devstral-small-2512",
@@ -3018,7 +3039,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 81
+      "rank": 82
     },
     {
       "model": "grok-4.1-fast",
@@ -3039,7 +3060,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 82
+      "rank": 83
     }
   ]
 }
