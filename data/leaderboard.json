@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T03:54:51.831224+00:00",
+  "generated_at": "2026-05-27T04:25:08.839654+00:00",
   "pipeline_version": "1.0.0",
   "n_models": 83,
   "n_benchmarks": 5,
@@ -834,6 +834,54 @@
       "rank": 18
     },
     {
+      "model": "qwen3.7-max",
+      "composite_efficiency_score": 20.6054,
+      "avg_normalized_e": 21.6899,
+      "participation_penalty": 0.95,
+      "n_benchmarks": 4,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 46.75,
+          "completion_time_s": 4380.29,
+          "e_bt": 5e-05,
+          "normalized_e": 28.853,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 87.057,
+          "completion_time_s": 192.18,
+          "e_bt": 0.003944,
+          "normalized_e": 7.3735,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 68.8,
+          "completion_time_s": 976.13,
+          "e_bt": 0.000485,
+          "normalized_e": 6.4012,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 59.176,
+          "completion_time_s": 664.84,
+          "e_bt": 0.000527,
+          "normalized_e": 44.1317,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 19
+    },
+    {
       "model": "gpt-5.2",
       "composite_efficiency_score": 20.1643,
       "avg_normalized_e": 20.1643,
@@ -888,7 +936,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "model": "gemini-2.5-flash-preview-04-17",
@@ -909,7 +957,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "model": "claude-opus-4-5-20251101-thinking",
@@ -966,7 +1014,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "model": "deepseek-v4",
@@ -1023,7 +1071,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "model": "kimi-k2.6",
@@ -1071,7 +1119,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "model": "gpt-5.4-mini",
@@ -1128,7 +1176,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "model": "glm-5.1",
@@ -1176,7 +1224,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "model": "gpt-5.4-nano",
@@ -1233,7 +1281,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "model": "gpt-5",
@@ -1290,7 +1338,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "model": "o4-mini",
@@ -1320,7 +1368,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "model": "claude-haiku-4-5-20251001-thinking",
@@ -1368,7 +1416,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "model": "gpt-5.1",
@@ -1425,7 +1473,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "model": "grok-3-mini-fast-low-reasoning",
@@ -1446,7 +1494,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "model": "qwen-3.6-plus",
@@ -1494,7 +1542,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "model": "claude-sonnet-4-5-20250929-thinking",
@@ -1551,7 +1599,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "model": "gemini-2.5-flash-lite-preview-09-2025-thinking",
@@ -1572,7 +1620,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "model": "gpt-4.1-mini",
@@ -1593,7 +1641,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "model": "kimi-k2.5",
@@ -1650,7 +1698,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "model": "gemini-2.5-flash-preview-09-2025",
@@ -1671,7 +1719,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "model": "gemini-2.5-flash-preview-09-2025-thinking",
@@ -1692,7 +1740,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "model": "devstral-2",
@@ -1731,7 +1779,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "model": "minimax-m2.1",
@@ -1788,7 +1836,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "model": "minimax-m2.5-lightning",
@@ -1836,7 +1884,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "model": "deepseek-v3-0324",
@@ -1866,7 +1914,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "model": "o3",
@@ -1887,7 +1935,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "model": "deepseek-v3p2",
@@ -1926,7 +1974,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "model": "grok-code-fast-1",
@@ -1956,7 +2004,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "model": "qwen-3.6-max",
@@ -1986,7 +2034,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "model": "glm-4.7",
@@ -2034,7 +2082,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "model": "glm-5",
@@ -2091,7 +2139,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "model": "gpt-4.1",
@@ -2112,7 +2160,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "model": "claude-opus-4-1",
@@ -2142,7 +2190,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "model": "o3-mini",
@@ -2163,7 +2211,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "model": "qwen3.5-flash",
@@ -2202,7 +2250,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "model": "grok-4-fast",
@@ -2241,7 +2289,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "model": "gpt-oss-120b",
@@ -2262,7 +2310,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "model": "mistral-large-2512",
@@ -2292,7 +2340,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "model": "qwen3.5-plus-thinking",
@@ -2340,7 +2388,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "model": "claude-sonnet-4-20250514-thinking",
@@ -2367,36 +2415,6 @@
           "completion_time_s": 42.61,
           "e_bt": 0.009136,
           "normalized_e": 17.6532,
-          "source": "vals_ai"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "model": "qwen3.7-max",
-      "composite_efficiency_score": 6.0249,
-      "avg_normalized_e": 8.607,
-      "participation_penalty": 0.7,
-      "n_benchmarks": 2,
-      "benchmarks_participated": [
-        "terminal_bench_2",
-        "vibe_code_bench"
-      ],
-      "benchmark_details": [
-        {
-          "benchmark": "terminal_bench_2",
-          "score": 42.697,
-          "completion_time_s": 1021.77,
-          "e_bt": 0.000178,
-          "normalized_e": 10.9888,
-          "source": "vals_ai"
-        },
-        {
-          "benchmark": "vibe_code_bench",
-          "score": 41.512,
-          "completion_time_s": 9632.37,
-          "e_bt": 1.8e-05,
-          "normalized_e": 6.2253,
           "source": "vals_ai"
         }
       ],
@@ -2685,6 +2703,27 @@
       "rank": 68
     },
     {
+      "model": "command-a",
+      "composite_efficiency_score": 3.5236,
+      "avg_normalized_e": 7.0472,
+      "participation_penalty": 0.5,
+      "n_benchmarks": 1,
+      "benchmarks_participated": [
+        "livecodebench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "livecodebench",
+          "score": 76.459,
+          "completion_time_s": 154.7,
+          "e_bt": 0.003779,
+          "normalized_e": 7.0472,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 69
+    },
+    {
       "model": "qwen3-max-preview",
       "composite_efficiency_score": 3.4317,
       "avg_normalized_e": 4.9024,
@@ -2712,7 +2751,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 69
+      "rank": 70
     },
     {
       "model": "qwen3.6-27b",
@@ -2751,7 +2790,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 70
+      "rank": 71
     },
     {
       "model": "o1",
@@ -2772,7 +2811,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 71
+      "rank": 72
     },
     {
       "model": "grok-3-mini-fast-high-reasoning",
@@ -2790,27 +2829,6 @@
           "completion_time_s": 213.66,
           "e_bt": 0.002719,
           "normalized_e": 4.9485,
-          "source": "vals_ai"
-        }
-      ],
-      "rank": 72
-    },
-    {
-      "model": "command-a",
-      "composite_efficiency_score": 2.393,
-      "avg_normalized_e": 4.7859,
-      "participation_penalty": 0.5,
-      "n_benchmarks": 1,
-      "benchmarks_participated": [
-        "livecodebench"
-      ],
-      "benchmark_details": [
-        {
-          "benchmark": "livecodebench",
-          "score": 79.382,
-          "completion_time_s": 238.97,
-          "e_bt": 0.002637,
-          "normalized_e": 4.7859,
           "source": "vals_ai"
         }
       ],
