@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T04:25:08.839654+00:00",
+  "generated_at": "2026-05-28T16:16:38.067945+00:00",
   "pipeline_version": "1.0.0",
   "n_models": 83,
   "n_benchmarks": 5,
@@ -834,54 +834,6 @@
       "rank": 18
     },
     {
-      "model": "qwen3.7-max",
-      "composite_efficiency_score": 20.6054,
-      "avg_normalized_e": 21.6899,
-      "participation_penalty": 0.95,
-      "n_benchmarks": 4,
-      "benchmarks_participated": [
-        "ioi",
-        "livecodebench",
-        "swe_bench_verified",
-        "terminal_bench_2"
-      ],
-      "benchmark_details": [
-        {
-          "benchmark": "ioi",
-          "score": 46.75,
-          "completion_time_s": 4380.29,
-          "e_bt": 5e-05,
-          "normalized_e": 28.853,
-          "source": "vals_ai"
-        },
-        {
-          "benchmark": "livecodebench",
-          "score": 87.057,
-          "completion_time_s": 192.18,
-          "e_bt": 0.003944,
-          "normalized_e": 7.3735,
-          "source": "vals_ai"
-        },
-        {
-          "benchmark": "swe_bench_verified",
-          "score": 68.8,
-          "completion_time_s": 976.13,
-          "e_bt": 0.000485,
-          "normalized_e": 6.4012,
-          "source": "vals_ai"
-        },
-        {
-          "benchmark": "terminal_bench_2",
-          "score": 59.176,
-          "completion_time_s": 664.84,
-          "e_bt": 0.000527,
-          "normalized_e": 44.1317,
-          "source": "vals_ai"
-        }
-      ],
-      "rank": 19
-    },
-    {
       "model": "gpt-5.2",
       "composite_efficiency_score": 20.1643,
       "avg_normalized_e": 20.1643,
@@ -936,7 +888,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "model": "gemini-2.5-flash-preview-04-17",
@@ -957,7 +909,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "model": "claude-opus-4-5-20251101-thinking",
@@ -1014,7 +966,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "model": "deepseek-v4",
@@ -1071,7 +1023,7 @@
           "source": "vals_ai"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "model": "kimi-k2.6",
@@ -1116,6 +1068,63 @@
           "completion_time_s": 2967.77,
           "e_bt": 4.8e-05,
           "normalized_e": 17.777,
+          "source": "vals_ai"
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "model": "qwen3.7-max",
+      "composite_efficiency_score": 17.6645,
+      "avg_normalized_e": 17.6645,
+      "participation_penalty": 1.0,
+      "n_benchmarks": 5,
+      "benchmarks_participated": [
+        "ioi",
+        "livecodebench",
+        "swe_bench_verified",
+        "terminal_bench_2",
+        "vibe_code_bench"
+      ],
+      "benchmark_details": [
+        {
+          "benchmark": "ioi",
+          "score": 46.75,
+          "completion_time_s": 4380.29,
+          "e_bt": 5e-05,
+          "normalized_e": 28.853,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "livecodebench",
+          "score": 87.057,
+          "completion_time_s": 192.18,
+          "e_bt": 0.003944,
+          "normalized_e": 7.3735,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "swe_bench_verified",
+          "score": 68.8,
+          "completion_time_s": 976.13,
+          "e_bt": 0.000485,
+          "normalized_e": 6.4012,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "terminal_bench_2",
+          "score": 59.176,
+          "completion_time_s": 664.84,
+          "e_bt": 0.000527,
+          "normalized_e": 44.1317,
+          "source": "vals_ai"
+        },
+        {
+          "benchmark": "vibe_code_bench",
+          "score": 11.418,
+          "completion_time_s": 2334.1,
+          "e_bt": 6e-06,
+          "normalized_e": 1.563,
           "source": "vals_ai"
         }
       ],
