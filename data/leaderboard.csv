@@ -3,7 +3,7 @@ rank,model,composite_efficiency_score,avg_normalized_e,participation_penalty,n_b
 2,grok-4,60.7915,63.9911,0.95,4,ioi|livecodebench|swe_bench_verified|terminal_bench_2
 3,gemini-3.1-pro-preview-0226,52.4149,52.4149,1.0,5,ioi|livecodebench|swe_bench_verified|terminal_bench_2|vibe_code_bench
 4,grok-3,50.0,100.0,0.5,1,livecodebench
-5,claude-opus-4.7,45.236,45.236,1.0,5,ioi|livecodebench|swe_bench_verified|terminal_bench_2|vibe_code_bench
+5,claude-opus-4.7,45.6585,45.6585,1.0,5,ioi|livecodebench|swe_bench_verified|terminal_bench_2|vibe_code_bench
 6,gpt-5.4,41.5382,41.5382,1.0,5,ioi|livecodebench|swe_bench_verified|terminal_bench_2|vibe_code_bench
 7,gpt-5.3-codex,39.8108,39.8108,1.0,5,ioi|livecodebench|swe_bench_verified|terminal_bench_2|vibe_code_bench
 8,gpt-5.5,36.5983,38.5246,0.95,4,livecodebench|swe_bench_verified|terminal_bench_2|vibe_code_bench
@@ -67,11 +67,11 @@ rank,model,composite_efficiency_score,avg_normalized_e,participation_penalty,n_b
 66,claude-opus-4-1-20250805-thinking,4.5262,9.0525,0.5,1,livecodebench
 67,glm-4.6,3.5741,4.2049,0.85,3,ioi|livecodebench|terminal_bench_2
 68,claude-3-7-sonnet-20250219-thinking,3.5307,7.0614,0.5,1,livecodebench
-69,command-a,3.5236,7.0472,0.5,1,livecodebench
-70,qwen3-max-preview,3.4317,4.9024,0.7,2,ioi|livecodebench
-71,qwen3.6-27b,2.9118,3.4256,0.85,3,swe_bench_verified|terminal_bench_2|vibe_code_bench
-72,o1,2.4987,4.9974,0.5,1,livecodebench
-73,grok-3-mini-fast-high-reasoning,2.4743,4.9485,0.5,1,livecodebench
+69,qwen3-max-preview,3.4317,4.9024,0.7,2,ioi|livecodebench
+70,qwen3.6-27b,2.9118,3.4256,0.85,3,swe_bench_verified|terminal_bench_2|vibe_code_bench
+71,o1,2.4987,4.9974,0.5,1,livecodebench
+72,grok-3-mini-fast-high-reasoning,2.4743,4.9485,0.5,1,livecodebench
+73,command-a,2.393,4.7859,0.5,1,livecodebench
 74,kimi-k2-thinking,2.3437,2.7573,0.85,3,livecodebench|swe_bench_verified|terminal_bench_2
 75,langstonnimnvidiallama-3.3-nemotron-super-49b-v1-42e84561-thinking,1.9956,3.9912,0.5,1,livecodebench
 76,magistral-medium-2509,1.8723,2.6747,0.7,2,ioi|livecodebench
