@@ -470,50 +470,75 @@ def scrape_artificial_analysis(session) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Entity Resolution
+# Entity Resolution (slug-based, no fuzzy matching)
 # ---------------------------------------------------------------------------
 
-def normalize_model_name(name: str) -> str:
-    name = re.sub(r"\s+", " ", name.strip())
-    name = re.sub(r"[^\w\s\.\-\(\)]", "", name)
+SLUG_ALIASES = {
+    "deepseek-r1": "deepseek-r1",
+    "deepseek-v3-0324": "deepseek-v3-0324",
+    "deepseek-v3p1": "deepseek-v3p1",
+    "deepseek-v3p2": "deepseek-v3p2",
+    "deepseek-v3p2-thinking": "deepseek-v3p2-thinking",
+    "deepseek-v4-pro": "deepseek-v4-pro",
+}
+
+
+def canonical_from_slug(slug: str) -> str:
+    """Derive a stable canonical key from a vals.ai model slug.
+
+    Rules (in order):
+    1. Strip hosting provider prefix (everything before first /)
+    2. Strip trailing ISO dates (-YYYY-MM-DD or -YYYYMMDD)
+    3. Look up edge-case alias map
+    4. Lowercase, collapse dashes, strip
+
+    These keep a model's identity separate: `deepseek-v4-pro` stays distinct
+    from `deepseek-v4-flash`; `thinking` variants stay separate.
+    """
+    model = slug.split("/", 1)[1] if "/" in slug else slug
+    model = re.sub(r"-\d{4}-\d{2}-\d{2}$", "", model)
+    model = re.sub(r"-\d{8}$", "", model)
+    key = model.lower().strip("-")
+    return SLUG_ALIASES.get(key, key)
+
+
+def display_name(canonical: str, model_slug: str = "") -> str:
+    """Pretty-print a canonical key for the leaderboard table."""
+    name = canonical.replace("-", " ")
+    name = name.replace(" thinking", " (Thinking)")
+    name = name.replace(" nonthinking", " (Non-thinking)")
+    name = " ".join(
+        w[0].upper() + w[1:] if w and w[0].islower() else w
+        for w in name.split()
+    )
+    name = name.replace("Gpt", "GPT").replace("M2", "M2").replace("M2", "M2")
+    name = re.sub(r"\bgpt(\b| )", lambda m: "GPT" + m.group(0)[3:], name, flags=re.I)
+    name = re.sub(r"\bai\b", "AI", name, flags=re.I)
+    name = re.sub(r"\bglm\b", "GLM", name, flags=re.I)
     return name
 
 
-def resolve_model_name(raw_name: str) -> str:
-    normalized = normalize_model_name(raw_name)
-    key = normalized.lower().strip()
-
-    if key in REVERSE_ALIAS:
-        return REVERSE_ALIAS[key]
-
-    for alias_key, canonical in REVERSE_ALIAS.items():
-        if fuzz.partial_ratio(key, alias_key) >= 95:
-            return canonical
-        if fuzz.token_sort_ratio(key, alias_key) >= 90:
-            return canonical
-
-    best, score = process.extractOne(key, REVERSE_ALIAS.keys(), scorer=fuzz.token_sort_ratio)
-    if score >= 88:
-        return REVERSE_ALIAS[best]
-
-    canonical = re.sub(r"[\s\(\)]+", "-", key)
-    canonical = re.sub(r"-+", "-", canonical).strip("-")
-    return canonical
-
-
 def deduplicate_models(df: pd.DataFrame) -> pd.DataFrame:
+    """Deduplicate by canonical slug, then per-benchmark pick highest score."""
     if df.empty:
         return df
     df = df.copy()
-    df["model_canonical"] = df["model_raw"].apply(resolve_model_name)
+    df["canonical"] = df["model_slug"].apply(canonical_from_slug)
+
     deduped = []
-    for (model, benchmark), group in df.groupby(["model_canonical", "benchmark"]):
-        if len(group) > 1:
-            best = group.loc[group["score"].idxmax()]
-            deduped.append(best)
-        else:
-            deduped.append(group.iloc[0])
-    return pd.DataFrame(deduped).reset_index(drop=True)
+    for (canon, benchmark), group in df.groupby(["canonical", "benchmark"]):
+        best = group.loc[group["score"].idxmax()] if len(group) > 1 else group.iloc[0]
+        deduped.append(best)
+
+    result = pd.DataFrame(deduped).reset_index(drop=True)
+    # Generate display name once per canonical
+    display_map = {
+        c: display_name(c)
+        for c in result["canonical"].unique()
+    }
+    result["model_canonical"] = result["canonical"]
+    result["model"] = result["canonical"].map(display_map)
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -760,3 +785,52 @@ def run_pipeline():
 
 if __name__ == "__main__":
     run_pipeline()
+
+
+def run_pipeline_return() -> dict:
+    log.info("=" * 60)
+    log.info("LLM Meta-Leaderboard Pipeline")
+    log.info("=" * 60)
+
+    session = _session()
+
+    log.info("--- Phase 1: Data Ingestion ---")
+    vals_rows = scrape_vals_ai(session)
+    aa_rows = scrape_artificial_analysis(session)
+    all_rows = vals_rows + aa_rows
+
+    if not all_rows:
+        log.error("No data from any source. Aborting.")
+        sys.exit(1)
+
+    log.info("Total raw rows: %d (vals=%d, aa=%d)", len(all_rows), len(vals_rows), len(aa_rows))
+
+    log.info("--- Phase 2: Entity Resolution ---")
+    df = pd.DataFrame(all_rows)
+    df = deduplicate_models(df)
+    log.info("After dedup: %d rows, %d unique models", len(df), df["model_canonical"].nunique())
+
+    log.info("--- Phase 3: Outlier Rejection ---")
+    df = reject_outliers(df)
+    log.info("After outliers: %d rows", len(df))
+
+    log.info("--- Phase 4: Efficiency (E_bt) ---")
+    df = calculate_efficiency(df)
+
+    log.info("--- Phase 5: Normalization ---")
+    df = normalize_per_benchmark(df)
+
+    log.info("--- Phase 6: Composite ---")
+    result_df = aggregate_composite(df)
+    log.info("%d models scored", len(result_df))
+
+    output = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "pipeline_version": "1.0.0",
+        "n_models": len(result_df),
+        "n_benchmarks": int(df["benchmark"].nunique()),
+        "n_benchmarks_expected": len(VALS_BENCHMARKS),
+        "leaderboard": result_df.to_dict(orient="records"),
+    }
+
+    return output

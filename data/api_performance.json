@@ -1,0 +1,1139 @@
+{
+  "generated": "2026-05-17T03:17:21.175467+00:00",
+  "sources": [
+    "llm-speedrun",
+    "kickllm",
+    "tokenmix",
+    "crazyrouter",
+    "digitalapplied"
+  ],
+  "records": [
+    {
+      "model_canonical": "llama-3.1-8b-(groq)",
+      "ttft_s": 0.12,
+      "tps": 520.0,
+      "total_time_s": 0.61,
+      "n_sources": 1,
+      "providers": [
+        "groq"
+      ],
+      "top_provider": "groq",
+      "speed_score": 4905.6604,
+      "speed_rank": 1
+    },
+    {
+      "model_canonical": "llama-3.1-70b-(groq)",
+      "ttft_s": 0.18,
+      "tps": 330.0,
+      "total_time_s": 0.96,
+      "n_sources": 1,
+      "providers": [
+        "groq"
+      ],
+      "top_provider": "groq",
+      "speed_score": 3027.5229,
+      "speed_rank": 2
+    },
+    {
+      "model_canonical": "openai-gpt-oss-120b",
+      "ttft_s": 0.61,
+      "tps": 161.7,
+      "total_time_s": 62.45,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 1239.0805,
+      "speed_rank": 3
+    },
+    {
+      "model_canonical": "minimax-m2.7",
+      "ttft_s": 3.43,
+      "tps": 322.2,
+      "total_time_s": 34.47,
+      "n_sources": 1,
+      "providers": [
+        "logfare"
+      ],
+      "top_provider": "logfare",
+      "speed_score": 1186.7403,
+      "speed_rank": 4
+    },
+    {
+      "model_canonical": "claude-haiku-3.5",
+      "ttft_s": 0.28,
+      "tps": 130.0,
+      "total_time_s": 2.25,
+      "n_sources": 1,
+      "providers": [
+        "anthropic"
+      ],
+      "top_provider": "anthropic",
+      "speed_score": 1140.3509,
+      "speed_rank": 5
+    },
+    {
+      "model_canonical": "gpt-6",
+      "ttft_s": 2.77,
+      "tps": 252.5,
+      "total_time_s": 42.37,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 1058.7002,
+      "speed_rank": 6
+    },
+    {
+      "model_canonical": "gpt-4o-mini",
+      "ttft_s": 0.25,
+      "tps": 115.0,
+      "total_time_s": 2.48,
+      "n_sources": 1,
+      "providers": [
+        "openai"
+      ],
+      "top_provider": "openai",
+      "speed_score": 1022.2222,
+      "speed_rank": 7
+    },
+    {
+      "model_canonical": "mistral-small-3.1",
+      "ttft_s": 0.31,
+      "tps": 105.0,
+      "total_time_s": 2.75,
+      "n_sources": 1,
+      "providers": [
+        "mistral"
+      ],
+      "top_provider": "mistral",
+      "speed_score": 909.0909,
+      "speed_rank": 8
+    },
+    {
+      "model_canonical": "codestral-25.01",
+      "ttft_s": 0.35,
+      "tps": 95.0,
+      "total_time_s": 3.04,
+      "n_sources": 1,
+      "providers": [
+        "mistral"
+      ],
+      "top_provider": "mistral",
+      "speed_score": 808.5106,
+      "speed_rank": 9
+    },
+    {
+      "model_canonical": "llama-3.3-70b-(together)",
+      "ttft_s": 0.35,
+      "tps": 95.0,
+      "total_time_s": 3.04,
+      "n_sources": 1,
+      "providers": [
+        "together"
+      ],
+      "top_provider": "together",
+      "speed_score": 808.5106,
+      "speed_rank": 10
+    },
+    {
+      "model_canonical": "gpt-4o",
+      "ttft_s": 0.38,
+      "tps": 92.0,
+      "total_time_s": 3.16,
+      "n_sources": 1,
+      "providers": [
+        "openai"
+      ],
+      "top_provider": "openai",
+      "speed_score": 773.1092,
+      "speed_rank": 11
+    },
+    {
+      "model_canonical": "command-r",
+      "ttft_s": 0.38,
+      "tps": 90.0,
+      "total_time_s": 3.22,
+      "n_sources": 1,
+      "providers": [
+        "cohere"
+      ],
+      "top_provider": "cohere",
+      "speed_score": 756.3025,
+      "speed_rank": 12
+    },
+    {
+      "model_canonical": "gemini-2.0-flash",
+      "ttft_s": 0.8655,
+      "tps": 101.55,
+      "total_time_s": 456.46,
+      "n_sources": 2,
+      "providers": [
+        "hapuppy",
+        "google"
+      ],
+      "top_provider": "hapuppy",
+      "speed_score": 708.7563,
+      "speed_rank": 13
+    },
+    {
+      "model_canonical": "minimax-m2.1",
+      "ttft_s": 0.54,
+      "tps": 87.9,
+      "total_time_s": 114.31,
+      "n_sources": 1,
+      "providers": [
+        "ollama-cloud"
+      ],
+      "top_provider": "ollama-cloud",
+      "speed_score": 692.126,
+      "speed_rank": 14
+    },
+    {
+      "model_canonical": "\u674e-mistralai-mixtral-8x22b-instruct-v0.1",
+      "ttft_s": 0.87,
+      "tps": 98.5,
+      "total_time_s": 102.39,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 686.4111,
+      "speed_rank": 15
+    },
+    {
+      "model_canonical": "kimi-k2.5",
+      "ttft_s": 1.33,
+      "tps": 113.8,
+      "total_time_s": 89.2,
+      "n_sources": 1,
+      "providers": [
+        "logfare"
+      ],
+      "top_provider": "logfare",
+      "speed_score": 683.4835,
+      "speed_rank": 16
+    },
+    {
+      "model_canonical": "x-ai-grok-code-fast-1:optimized:free",
+      "ttft_s": 0.93,
+      "tps": 99.0,
+      "total_time_s": 101.94,
+      "n_sources": 1,
+      "providers": [
+        "kilo"
+      ],
+      "top_provider": "kilo",
+      "speed_score": 675.7679,
+      "speed_rank": 17
+    },
+    {
+      "model_canonical": "gemini-2.5-pro",
+      "ttft_s": 0.45,
+      "tps": 82.0,
+      "total_time_s": 3.57,
+      "n_sources": 1,
+      "providers": [
+        "google"
+      ],
+      "top_provider": "google",
+      "speed_score": 669.3878,
+      "speed_rank": 18
+    },
+    {
+      "model_canonical": "qwen-2.5-72b-(together)",
+      "ttft_s": 0.42,
+      "tps": 78.0,
+      "total_time_s": 3.7,
+      "n_sources": 1,
+      "providers": [
+        "together"
+      ],
+      "top_provider": "together",
+      "speed_score": 644.6281,
+      "speed_rank": 19
+    },
+    {
+      "model_canonical": "grok-2",
+      "ttft_s": 0.48,
+      "tps": 75.0,
+      "total_time_s": 3.89,
+      "n_sources": 1,
+      "providers": [
+        "xai"
+      ],
+      "top_provider": "xai",
+      "speed_score": 604.8387,
+      "speed_rank": 20
+    },
+    {
+      "model_canonical": "\u674e-mistralai-mistral-small-4-119b-2603",
+      "ttft_s": 0.96,
+      "tps": 86.2,
+      "total_time_s": 116.97,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 582.4324,
+      "speed_rank": 21
+    },
+    {
+      "model_canonical": "mistral-large-2",
+      "ttft_s": 0.48,
+      "tps": 72.0,
+      "total_time_s": 4.04,
+      "n_sources": 1,
+      "providers": [
+        "mistral"
+      ],
+      "top_provider": "mistral",
+      "speed_score": 580.6452,
+      "speed_rank": 22
+    },
+    {
+      "model_canonical": "llama-3.3-70b",
+      "ttft_s": 0.59,
+      "tps": 71.9,
+      "total_time_s": 139.67,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 555.2124,
+      "speed_rank": 23
+    },
+    {
+      "model_canonical": "command-r+",
+      "ttft_s": 0.55,
+      "tps": 65.0,
+      "total_time_s": 4.49,
+      "n_sources": 1,
+      "providers": [
+        "cohere"
+      ],
+      "top_provider": "cohere",
+      "speed_score": 509.8039,
+      "speed_rank": 24
+    },
+    {
+      "model_canonical": "\u674e-qwen-qwen2.5-coder-32b-instruct",
+      "ttft_s": 0.74,
+      "tps": 65.7,
+      "total_time_s": 152.95,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 479.562,
+      "speed_rank": 25
+    },
+    {
+      "model_canonical": "qwen3-coder-next",
+      "ttft_s": 0.29,
+      "tps": 51.1,
+      "total_time_s": 195.98,
+      "n_sources": 1,
+      "providers": [
+        "ollama-cloud"
+      ],
+      "top_provider": "ollama-cloud",
+      "speed_score": 446.2882,
+      "speed_rank": 26
+    },
+    {
+      "model_canonical": "\u674e-mistralai-devstral-2-123b-instruct-2512",
+      "ttft_s": 0.72,
+      "tps": 56.9,
+      "total_time_s": 176.47,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 418.3824,
+      "speed_rank": 27
+    },
+    {
+      "model_canonical": "openai-gpt-6",
+      "ttft_s": 5.66,
+      "tps": 148.6,
+      "total_time_s": 72.95,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 387.9896,
+      "speed_rank": 28
+    },
+    {
+      "model_canonical": "\u674e-google-gemma-3-27b-it",
+      "ttft_s": 0.93,
+      "tps": 56.7,
+      "total_time_s": 177.3,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 387.0307,
+      "speed_rank": 29
+    },
+    {
+      "model_canonical": "claude-opus-4.6",
+      "ttft_s": 0.9,
+      "tps": 55.0,
+      "total_time_s": 5.55,
+      "n_sources": 1,
+      "providers": [
+        "anthropic"
+      ],
+      "top_provider": "anthropic",
+      "speed_score": 379.3103,
+      "speed_rank": 30
+    },
+    {
+      "model_canonical": "gemini-2.5-flash",
+      "ttft_s": 1.9507,
+      "tps": 70.17,
+      "total_time_s": 9184.7,
+      "n_sources": 3,
+      "providers": [
+        "hapuppy",
+        "cursor-proxy",
+        "google"
+      ],
+      "top_provider": "hapuppy",
+      "speed_score": 355.2481,
+      "speed_rank": 31
+    },
+    {
+      "model_canonical": "openrouter-free",
+      "ttft_s": 0.67,
+      "tps": 42.8,
+      "total_time_s": 234.31,
+      "n_sources": 1,
+      "providers": [
+        "kilo"
+      ],
+      "top_provider": "kilo",
+      "speed_score": 320.5993,
+      "speed_rank": 32
+    },
+    {
+      "model_canonical": "\u674e-nvidia-llama-3.1-nemotron-nano-vl-8b-v1",
+      "ttft_s": 0.67,
+      "tps": 42.4,
+      "total_time_s": 236.52,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 317.603,
+      "speed_rank": 33
+    },
+    {
+      "model_canonical": "glm-4.6v-flash",
+      "ttft_s": 3.58,
+      "tps": 86.0,
+      "total_time_s": 119.86,
+      "n_sources": 1,
+      "providers": [
+        "ktai-paid"
+      ],
+      "top_provider": "ktai-paid",
+      "speed_score": 308.2437,
+      "speed_rank": 34
+    },
+    {
+      "model_canonical": "claude-sonnet-4",
+      "ttft_s": 0.1611,
+      "tps": 32.57,
+      "total_time_s": 28071.41,
+      "n_sources": 4,
+      "providers": [
+        "cursor-proxy",
+        "anthropic"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 301.4126,
+      "speed_rank": 35
+    },
+    {
+      "model_canonical": "o4-mini",
+      "ttft_s": 1.8,
+      "tps": 55.0,
+      "total_time_s": 6.45,
+      "n_sources": 1,
+      "providers": [
+        "openai"
+      ],
+      "top_provider": "openai",
+      "speed_score": 289.4737,
+      "speed_rank": 36
+    },
+    {
+      "model_canonical": "gpt-4.5",
+      "ttft_s": 1.2,
+      "tps": 45.0,
+      "total_time_s": 6.89,
+      "n_sources": 1,
+      "providers": [
+        "openai"
+      ],
+      "top_provider": "openai",
+      "speed_score": 281.25,
+      "speed_rank": 37
+    },
+    {
+      "model_canonical": "qwen-qwen3-coder-flash",
+      "ttft_s": 1.56,
+      "tps": 49.6,
+      "total_time_s": 276.38,
+      "n_sources": 2,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 278.6517,
+      "speed_rank": 38
+    },
+    {
+      "model_canonical": "deepseek-v3",
+      "ttft_s": 0.888,
+      "tps": 39.04,
+      "total_time_s": 391.94,
+      "n_sources": 2,
+      "providers": [
+        "ollama-cloud",
+        "deepseek"
+      ],
+      "top_provider": "ollama-cloud",
+      "speed_score": 270.3601,
+      "speed_rank": 39
+    },
+    {
+      "model_canonical": "qwen-coder-model",
+      "ttft_s": 1.47,
+      "tps": 44.1,
+      "total_time_s": 228.23,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 254.1787,
+      "speed_rank": 40
+    },
+    {
+      "model_canonical": "deepseek-r1",
+      "ttft_s": 1.8,
+      "tps": 42.0,
+      "total_time_s": 7.9,
+      "n_sources": 1,
+      "providers": [
+        "deepseek"
+      ],
+      "top_provider": "deepseek",
+      "speed_score": 221.0526,
+      "speed_rank": 41
+    },
+    {
+      "model_canonical": "\u674e-longcat-flash-lite",
+      "ttft_s": 7.5,
+      "tps": 100.5,
+      "total_time_s": 107.0,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 211.5789,
+      "speed_rank": 42
+    },
+    {
+      "model_canonical": "o3",
+      "ttft_s": 2.5,
+      "tps": 38.0,
+      "total_time_s": 9.24,
+      "n_sources": 1,
+      "providers": [
+        "openai"
+      ],
+      "top_provider": "openai",
+      "speed_score": 168.8889,
+      "speed_rank": 43
+    },
+    {
+      "model_canonical": "\u82f1\u4f1f\u8fbe-nvidia-riva-translate-4b-instruct-v1.1",
+      "ttft_s": 0.65,
+      "tps": 21.5,
+      "total_time_s": 465.77,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 162.2642,
+      "speed_rank": 44
+    },
+    {
+      "model_canonical": "z-ai-glm4.7",
+      "ttft_s": 0.61,
+      "tps": 20.6,
+      "total_time_s": 486.05,
+      "n_sources": 1,
+      "providers": [
+        "nvidia"
+      ],
+      "top_provider": "nvidia",
+      "speed_score": 157.8544,
+      "speed_rank": 45
+    },
+    {
+      "model_canonical": "glm-4.5-flash",
+      "ttft_s": 1.07,
+      "tps": 24.0,
+      "total_time_s": 417.74,
+      "n_sources": 1,
+      "providers": [
+        "ktai-paid"
+      ],
+      "top_provider": "ktai-paid",
+      "speed_score": 156.3518,
+      "speed_rank": 46
+    },
+    {
+      "model_canonical": "llama-3.1-70b",
+      "ttft_s": 0.24,
+      "tps": 15.9,
+      "total_time_s": 629.17,
+      "n_sources": 1,
+      "providers": [
+        "nvidia"
+      ],
+      "top_provider": "nvidia",
+      "speed_score": 141.9643,
+      "speed_rank": 47
+    },
+    {
+      "model_canonical": "grok-4",
+      "ttft_s": 1.2512,
+      "tps": 19.08,
+      "total_time_s": 2695.87,
+      "n_sources": 9,
+      "providers": [
+        "blazeai",
+        "cursor-proxy"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 117.3779,
+      "speed_rank": 48
+    },
+    {
+      "model_canonical": "openai-z-ai-glm4.7",
+      "ttft_s": 0.83,
+      "tps": 15.8,
+      "total_time_s": 633.74,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 111.6608,
+      "speed_rank": 49
+    },
+    {
+      "model_canonical": "glm-4.7",
+      "ttft_s": 1.48,
+      "tps": 18.55,
+      "total_time_s": 543.02,
+      "n_sources": 2,
+      "providers": [
+        "ollama-cloud",
+        "ktai-paid"
+      ],
+      "top_provider": "ollama-cloud",
+      "speed_score": 106.6092,
+      "speed_rank": 50
+    },
+    {
+      "model_canonical": "\u674e-meta-llama-3.1-405b-instruct",
+      "ttft_s": 1.92,
+      "tps": 20.4,
+      "total_time_s": 492.12,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 104.0816,
+      "speed_rank": 51
+    },
+    {
+      "model_canonical": "\u674e-qwen-qwen3-next-80b-a3b-thinking",
+      "ttft_s": 0.63,
+      "tps": 13.1,
+      "total_time_s": 763.99,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 99.6198,
+      "speed_rank": 52
+    },
+    {
+      "model_canonical": "qwen-qwen3-coder-plus",
+      "ttft_s": 1.8,
+      "tps": 18.6,
+      "total_time_s": 539.43,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 97.8947,
+      "speed_rank": 53
+    },
+    {
+      "model_canonical": "qwen-qwen3.5-plus-thinking",
+      "ttft_s": 2.7,
+      "tps": 14.1,
+      "total_time_s": 711.92,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 60.0,
+      "speed_rank": 54
+    },
+    {
+      "model_canonical": "qwen-qwen3.6-plus",
+      "ttft_s": 2.745,
+      "tps": 13.8,
+      "total_time_s": 727.42,
+      "n_sources": 2,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 58.1665,
+      "speed_rank": 55
+    },
+    {
+      "model_canonical": "\u674e-moonshotai-kimi-k2.5",
+      "ttft_s": 1.25,
+      "tps": 9.3,
+      "total_time_s": 1076.52,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 57.2308,
+      "speed_rank": 56
+    },
+    {
+      "model_canonical": "qwen-qwen3.5-plus",
+      "ttft_s": 2.965,
+      "tps": 14.05,
+      "total_time_s": 714.93,
+      "n_sources": 2,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 56.5962,
+      "speed_rank": 57
+    },
+    {
+      "model_canonical": "\u674e-moonshotai-kimi-k2-instruct-0905",
+      "ttft_s": 1.3,
+      "tps": 7.9,
+      "total_time_s": 1267.12,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 47.8788,
+      "speed_rank": 58
+    },
+    {
+      "model_canonical": "\u674e-longcat-flash-chat",
+      "ttft_s": 11.67,
+      "tps": 32.2,
+      "total_time_s": 322.23,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 47.1105,
+      "speed_rank": 59
+    },
+    {
+      "model_canonical": "gemini-3-flash-preview",
+      "ttft_s": 2.4367,
+      "tps": 9.77,
+      "total_time_s": 1111.98,
+      "n_sources": 3,
+      "providers": [
+        "ktai-paid",
+        "ollama-cloud",
+        "logfare"
+      ],
+      "top_provider": "ktai-paid",
+      "speed_score": 44.027,
+      "speed_rank": 60
+    },
+    {
+      "model_canonical": "random-model",
+      "ttft_s": 1.11,
+      "tps": 6.5,
+      "total_time_s": 1539.57,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 41.8006,
+      "speed_rank": 61
+    },
+    {
+      "model_canonical": "\u674e-qwen-qwen3-next-80b-a3b-instruct",
+      "ttft_s": 0.77,
+      "tps": 5.2,
+      "total_time_s": 1923.85,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 37.5451,
+      "speed_rank": 62
+    },
+    {
+      "model_canonical": "\u674e-qwen-qwen3.5-122b-a10b",
+      "ttft_s": 2.3,
+      "tps": 6.5,
+      "total_time_s": 1540.76,
+      "n_sources": 1,
+      "providers": [
+        "xinjianya"
+      ],
+      "top_provider": "xinjianya",
+      "speed_score": 30.2326,
+      "speed_rank": 63
+    },
+    {
+      "model_canonical": "moonshot-kimi-k2.5[2]",
+      "ttft_s": 1.13,
+      "tps": 4.4,
+      "total_time_s": 2273.86,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 28.115,
+      "speed_rank": 64
+    },
+    {
+      "model_canonical": "openai-minimaxai-minimax-m2.5",
+      "ttft_s": 0.92,
+      "tps": 4.1,
+      "total_time_s": 2439.94,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 28.0822,
+      "speed_rank": 65
+    },
+    {
+      "model_canonical": "minimax-m2",
+      "ttft_s": 2.28,
+      "tps": 3.4,
+      "total_time_s": 2943.46,
+      "n_sources": 1,
+      "providers": [
+        "ollama-cloud"
+      ],
+      "top_provider": "ollama-cloud",
+      "speed_score": 15.8879,
+      "speed_rank": 66
+    },
+    {
+      "model_canonical": "z-ai-glm5",
+      "ttft_s": 3.41,
+      "tps": 2.1,
+      "total_time_s": 4765.31,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 7.7634,
+      "speed_rank": 67
+    },
+    {
+      "model_canonical": "moonshotai-kimi-k2.5",
+      "ttft_s": 13.09,
+      "tps": 2.4,
+      "total_time_s": 4179.76,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 3.1809,
+      "speed_rank": 68
+    },
+    {
+      "model_canonical": "anthropic-claude-opus-4-6",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 69
+    },
+    {
+      "model_canonical": "anthropic-claude-opus-4-6-fast",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 70
+    },
+    {
+      "model_canonical": "anthropic-claude-opus-4.6",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 71
+    },
+    {
+      "model_canonical": "cursor-composer-2",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 72
+    },
+    {
+      "model_canonical": "cursor-composer-2-fast",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 73
+    },
+    {
+      "model_canonical": "google-gemini-3-flash",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 74
+    },
+    {
+      "model_canonical": "google-gemini-3-pro",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 75
+    },
+    {
+      "model_canonical": "google-gemini-3.1-pro",
+      "ttft_s": 0.01,
+      "tps": 0.3,
+      "total_time_s": 33333.34,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.9851,
+      "speed_rank": 76
+    },
+    {
+      "model_canonical": "claude-sonnet-4.6",
+      "ttft_s": 0.01,
+      "tps": 0.25,
+      "total_time_s": 41666.68,
+      "n_sources": 2,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.4876,
+      "speed_rank": 77
+    },
+    {
+      "model_canonical": "gpt-5",
+      "ttft_s": 0.0431,
+      "tps": 0.25,
+      "total_time_s": 41025.68,
+      "n_sources": 13,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 2.4849,
+      "speed_rank": 78
+    },
+    {
+      "model_canonical": "anthropic-claude-haiku-4.5",
+      "ttft_s": 0.01,
+      "tps": 0.2,
+      "total_time_s": 50000.01,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 1.99,
+      "speed_rank": 79
+    },
+    {
+      "model_canonical": "anthropic-claude-opus-4.5",
+      "ttft_s": 0.01,
+      "tps": 0.2,
+      "total_time_s": 50000.01,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 1.99,
+      "speed_rank": 80
+    },
+    {
+      "model_canonical": "anthropic-claude-opus-4.6-fast",
+      "ttft_s": 0.01,
+      "tps": 0.2,
+      "total_time_s": 50000.01,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 1.99,
+      "speed_rank": 81
+    },
+    {
+      "model_canonical": "auto",
+      "ttft_s": 0.01,
+      "tps": 0.2,
+      "total_time_s": 50000.01,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 1.99,
+      "speed_rank": 82
+    },
+    {
+      "model_canonical": "cursor-composer-1",
+      "ttft_s": 0.01,
+      "tps": 0.2,
+      "total_time_s": 50000.01,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 1.99,
+      "speed_rank": 83
+    },
+    {
+      "model_canonical": "moonshot-kimi-k2.5",
+      "ttft_s": 0.01,
+      "tps": 0.2,
+      "total_time_s": 50000.01,
+      "n_sources": 1,
+      "providers": [
+        "cursor-proxy"
+      ],
+      "top_provider": "cursor-proxy",
+      "speed_score": 1.99,
+      "speed_rank": 84
+    },
+    {
+      "model_canonical": "kilo-auto-free",
+      "ttft_s": 3.21,
+      "tps": 0.4,
+      "total_time_s": 25003.21,
+      "n_sources": 1,
+      "providers": [
+        "kilo"
+      ],
+      "top_provider": "kilo",
+      "speed_score": 1.5355,
+      "speed_rank": 85
+    },
+    {
+      "model_canonical": "z-ai-glm5-rp",
+      "ttft_s": 21.53,
+      "tps": 1.0,
+      "total_time_s": 10021.53,
+      "n_sources": 1,
+      "providers": [
+        "blazeai"
+      ],
+      "top_provider": "blazeai",
+      "speed_score": 0.85,
+      "speed_rank": 86
+    }
+  ]
+}
